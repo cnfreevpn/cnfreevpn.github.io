@@ -341,6 +341,16 @@ bash v2ray.sh
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 如何按 IP 段实现智能分流？</h5></div>
+    <div class="panel-body">
+        Sing-box 支持根据 IP 段匹配流量，将国内流量直连、国外流量走代理。结合策略组和规则文件，实现精细化流量管理，保证访问速度和稳定性，同时提高节点使用效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 如何实现域名白名单策略？</h5></div>
+    <div class="panel-body">
+        Clash 可以通过策略组结合规则文件，将指定域名或网站加入白名单，实现直连而不经过代理节点。这样可以保证国内访问速度，同时节省节点带宽资源，提高整体网络效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 支持测速功能吗？</h5></div>
     <div class="panel-body">
         支持。WinXray 提供节点延迟测速功能，可检测每个节点的响应时间与可用性。测速结果能帮助用户选择最快线路，也能排除无效或不稳定的节点，提高整体网络体验。<hr />    </div>
@@ -351,29 +361,9 @@ bash v2ray.sh
         请在防火墙设置中允许 Clash 的执行文件通过网络访问，并开放其监听端口。若使用 Windows Defender，可在防火墙高级规则中手动添加入站和出站规则，确保代理通信正常。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何按 IP 段实现智能分流？</h5></div>
+    <div class="panel-heading"><h5>VMess AEAD 加密在封锁网络中有什么优势？</h5></div>
     <div class="panel-body">
-        Sing-box 支持根据 IP 段匹配流量，将国内流量直连、国外流量走代理。结合策略组和规则文件，实现精细化流量管理，保证访问速度和稳定性，同时提高节点使用效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 策略组如何根据延迟自动切换节点？</h5></div>
-    <div class="panel-body">
-        策略组会根据节点延迟和丢包率选择最佳节点。结合路由规则，可保证国内流量直连、海外流量走最优节点，提高访问速度和连接稳定性，优化整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 自动节点切换如何改善网页访问速度？</h5></div>
-    <div class="panel-body">
-        Clash 结合策略组和延迟检测功能，自动选择延迟低、稳定性高的节点处理网页流量。提升访问速度和稳定性，减少加载时间和浏览卡顿，优化整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何使用 Clash 配置订阅链接？</h5></div>
-    <div class="panel-body">
-        在 Clash 中添加订阅链接时，用户需复制提供的 URL 并在客户端的配置界面中粘贴。Clash 会自动下载并更新配置文件。通过订阅，用户可以一键更新节点信息，无需手动导入，适合长期维护多个节点来源的用户。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 如何实现域名白名单策略？</h5></div>
-    <div class="panel-body">
-        Clash 可以通过策略组结合规则文件，将指定域名或网站加入白名单，实现直连而不经过代理节点。这样可以保证国内访问速度，同时节省节点带宽资源，提高整体网络效率。<hr />    </div>
+        AEAD 加密可以防止数据被篡改和流量特征泄露，降低被检测风险。在封锁较高的网络环境中，保证节点长期可用，提高数据传输安全性和访问可靠性，增强用户体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>如何使用 Sing-box 配合 Clash Rules 实现精细分流？</h5></div>
@@ -381,9 +371,19 @@ bash v2ray.sh
         将 Clash 的 rules 段提取出来转换为 Sing-box 的 routing 格式，或直接引用 rule-providers 源。Sing-box 的路由引擎支持更复杂的条件匹配，可结合 GeoIP 与 keyword 实现精细分流策略。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密在封锁网络中有什么优势？</h5></div>
+    <div class="panel-heading"><h5>V2Ray 策略组如何根据延迟自动切换节点？</h5></div>
     <div class="panel-body">
-        AEAD 加密可以防止数据被篡改和流量特征泄露，降低被检测风险。在封锁较高的网络环境中，保证节点长期可用，提高数据传输安全性和访问可靠性，增强用户体验。<hr />    </div>
+        策略组会根据节点延迟和丢包率选择最佳节点。结合路由规则，可保证国内流量直连、海外流量走最优节点，提高访问速度和连接稳定性，优化整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何使用 Clash 配置订阅链接？</h5></div>
+    <div class="panel-body">
+        在 Clash 中添加订阅链接时，用户需复制提供的 URL 并在客户端的配置界面中粘贴。Clash 会自动下载并更新配置文件。通过订阅，用户可以一键更新节点信息，无需手动导入，适合长期维护多个节点来源的用户。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 自动节点切换如何改善网页访问速度？</h5></div>
+    <div class="panel-body">
+        Clash 结合策略组和延迟检测功能，自动选择延迟低、稳定性高的节点处理网页流量。提升访问速度和稳定性，减少加载时间和浏览卡顿，优化整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的协议插件如何增强安全性？</h5></div>
@@ -417,16 +417,16 @@ bash v2ray.sh
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-10-3-mianfei-vpn.htm" title="免费VPN节点购买 - 10月3日20M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月3日20M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-21-free-vpn.htm" title="免费VPN节点购买 - 10月21日18.2M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月21日18.2M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-14-vpn-free.htm" title="免费VPN节点购买 - 10月14日18.3M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/SSR节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月14日18.3M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/SSR节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-4-free-vpn-node.htm" title="免费VPN节点购买 - 11月4日20.5M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 11月4日20.5M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-15-share-vpn.htm" title="免费VPN节点购买 - 10月15日22.7M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月15日22.7M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-9-vpn-node.htm" title="免费VPN节点购买 - 11月9日18.2M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 11月9日18.2M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-7-top-vpn.htm" title="免费VPN节点购买 - 10月7日18.4M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月7日18.4M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-31-free-node-subscribe-links.htm" title="免费VPN节点购买 - 10月31日20M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月31日20M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-12-free-vpn.htm" title="免费VPN节点购买 - 10月12日18.8M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月12日18.8M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-6-top-vpn.htm" title="免费VPN节点购买 - 10月6日19.8M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月6日19.8M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点节点推荐，VPN节点购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-11-5-vpn-proxy.htm" title="免费VPN节点购买 - 11月5日18.7M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 11月5日18.7M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-8-mianfei-vpn.htm" title="免费VPN节点购买 - 10月8日20.6M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月8日20.6M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-9-node-share.htm" title="免费VPN节点购买 - 10月9日18.6M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月9日18.6M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-24-mianfei-vpn.htm" title="免费VPN节点购买 - 10月24日23M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月24日23M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-4-vpn-free.htm" title="免费VPN节点购买 - 10月4日19.7M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月4日19.7M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-13-node-share.htm" title="免费VPN节点购买 - 10月13日18.5M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月13日18.5M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-22-share-vpn.htm" title="免费VPN节点购买 - 10月22日21.6M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月22日21.6M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-6-vpn-proxy.htm" title="免费VPN节点购买 - 11月6日19.8M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 11月6日19.8M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-27-free-node-subscribe-links.htm" title="免费VPN节点购买 - 10月27日22.8M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月27日22.8M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点节点推荐，VPN节点购买推荐</a></li>
                     </ul>
     </div>
 </div>
@@ -438,7 +438,7 @@ bash v2ray.sh
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">8</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
