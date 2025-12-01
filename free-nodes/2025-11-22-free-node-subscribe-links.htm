@@ -133,17 +133,18 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2025-11-21-top-vpn-node.htm">免费VPN节点购买 - 11月21日18.9M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点节点推荐，VPN节点购买推荐</a></p>
+        <p>下一个：<a href="/free-nodes/2025-11-23-free-node-subscribe.htm">免费VPN节点购买 - 11月23日20.9M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点节点推荐，VPN节点购买推荐</a></p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 节点分组功能有什么优势？</h5></div>
+    <div class="panel-heading"><h5>Potatso Lite 可以设置自定义 DNS 吗？</h5></div>
     <div class="panel-body">
-        分组管理可按延迟、地区或用途分类节点，并结合策略组实现自动分流。用户可快速选择最优节点，提高访问速度和稳定性，方便管理大量节点并优化维护效率。<hr />    </div>
+        支持自定义 DNS，可配置本地或远程 DNS 服务器，包括 DoH/DoT。正确配置可提升解析速度、防止 DNS 污染，提高访问稳定性和安全性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密如何确保数据传输安全？</h5></div>
+    <div class="panel-heading"><h5>Sing-box 如何兼容 Clash 的配置文件？</h5></div>
     <div class="panel-body">
-        AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。在高封锁环境中保证节点可用，提升数据安全和连接稳定性，降低被检测风险，确保长期安全访问体验。<hr />    </div>
+        Sing-box 支持 Clash 规则格式的解析，用户可直接导入 Clash 的 YAML 配置文件进行使用。虽然部分高级参数需要调整，但大多数分流和策略配置都能自动识别，便于迁移。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 协议和混淆组合如何优化稳定性？</h5></div>
@@ -151,9 +152,9 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         根据网络封锁情况选择合适协议和混淆组合，如 tls1.2_ticket_auth 模拟 HTTPS 流量。合理组合可提高抗封锁能力和稳定性，保证节点长期可用并优化网络连接。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 可以设置自定义 DNS 吗？</h5></div>
+    <div class="panel-heading"><h5>VMess AEAD 加密如何确保数据传输安全？</h5></div>
     <div class="panel-body">
-        支持自定义 DNS，可配置本地或远程 DNS 服务器，包括 DoH/DoT。正确配置可提升解析速度、防止 DNS 污染，提高访问稳定性和安全性。<hr />    </div>
+        AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。在高封锁环境中保证节点可用，提升数据安全和连接稳定性，降低被检测风险，确保长期安全访问体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 是否支持订阅自动更新？</h5></div>
@@ -161,19 +162,9 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         是的，WinXray 支持定时订阅更新。用户可在设置中开启自动更新周期（如每天或每小时），程序会自动下载新节点并替换旧配置，确保使用最新的线路资源。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何保证规则订阅的实时更新？</h5></div>
-    <div class="panel-body">
-        Sing-box 支持远程规则订阅 URL，可设置定期自动更新频率，如每小时或每天。自动更新保证节点和规则保持最新，减少手动维护，提高访问速度和分流效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Surfboard 的节点策略组如何提升使用体验？</h5></div>
     <div class="panel-body">
         策略组可将节点按延迟、用途或地理位置分类，通过规则自动选择最优节点。用户无需手动切换节点即可获得最佳速度和稳定性，提高浏览和观看流媒体的体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的混淆插件有什么作用？</h5></div>
-    <div class="panel-body">
-        混淆插件用于伪装流量，使其看起来像普通的 HTTP 或 TLS 请求。常见类型有 plain、tls1.2_ticket_auth 等。合理设置混淆能有效降低被识别的风险，提升连接成功率。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 支持按 IP 段分流吗？</h5></div>
@@ -181,9 +172,19 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         支持。Sing-box 可根据 IP 段将国内流量直连，国外流量走代理，结合策略组实现智能分流。这样可保证访问速度和稳定性，同时优化节点使用效率，提高网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何兼容 Clash 的配置文件？</h5></div>
+    <div class="panel-heading"><h5>Mihomo 节点分组功能有什么优势？</h5></div>
     <div class="panel-body">
-        Sing-box 支持 Clash 规则格式的解析，用户可直接导入 Clash 的 YAML 配置文件进行使用。虽然部分高级参数需要调整，但大多数分流和策略配置都能自动识别，便于迁移。    </div>
+        分组管理可按延迟、地区或用途分类节点，并结合策略组实现自动分流。用户可快速选择最优节点，提高访问速度和稳定性，方便管理大量节点并优化维护效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 如何保证规则订阅的实时更新？</h5></div>
+    <div class="panel-body">
+        Sing-box 支持远程规则订阅 URL，可设置定期自动更新频率，如每小时或每天。自动更新保证节点和规则保持最新，减少手动维护，提高访问速度和分流效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 的混淆插件有什么作用？</h5></div>
+    <div class="panel-body">
+        混淆插件用于伪装流量，使其看起来像普通的 HTTP 或 TLS 请求。常见类型有 plain、tls1.2_ticket_auth 等。合理设置混淆能有效降低被识别的风险，提升连接成功率。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -212,16 +213,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-10-11-node-share.htm" title="免费VPN节点购买 - 10月11日22.1M/S|免费Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月11日22.1M/S|免费Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-1-node-share.htm" title="免费VPN节点购买 - 11月1日21.1M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 11月1日21.1M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-26-free-vpn-node.htm" title="免费VPN节点购买 - 10月26日20.7M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月26日20.7M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-22-free-node-subscribe-links.htm" title="免费VPN节点购买 - 11月22日18.3M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 11月22日18.3M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-13-node-share.htm" title="免费VPN节点购买 - 10月13日18.5M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月13日18.5M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-31-free-node-subscribe-links.htm" title="免费VPN节点购买 - 10月31日20M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月31日20M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-19-vpn-node.htm" title="免费VPN节点购买 - 11月19日19.8M/S|免费SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 11月19日19.8M/S|免费SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-23-free-node-subscribe-links.htm" title="免费VPN节点购买 - 10月23日20.3M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月23日20.3M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-4-vpn-free.htm" title="免费VPN节点购买 - 10月4日19.7M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月4日19.7M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-1-free-vpn-node.htm" title="免费VPN节点购买 - 12月1日20.6M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 12月1日20.6M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-16-free-node-subscribe.htm" title="免费VPN节点购买 - 10月16日19.4M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月16日19.4M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-11-15-vpn-node.htm" title="免费VPN节点购买 - 11月15日19.8M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 11月15日19.8M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-7-top-vpn.htm" title="免费VPN节点购买 - 10月7日18.4M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月7日18.4M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-25-share-vpn.htm" title="免费VPN节点购买 - 10月25日18.8M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月25日18.8M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-13-vpn-node.htm" title="免费VPN节点购买 - 11月13日20.2M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 11月13日20.2M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-13-node-share.htm" title="免费VPN节点购买 - 10月13日18.5M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月13日18.5M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-14-vpn-free.htm" title="免费VPN节点购买 - 10月14日18.3M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/SSR节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 10月14日18.3M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/SSR节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-30-vpn-node.htm" title="免费VPN节点购买 - 11月30日19.4M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 11月30日19.4M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-1-node-share.htm" title="免费VPN节点购买 - 11月1日21.1M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 11月1日21.1M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点节点推荐，VPN节点购买推荐</a></li>
                     </ul>
     </div>
 </div>
@@ -233,7 +234,10 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">21</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">1</span> <a href="/date/2025-12/" title="2025-12 归档">2025-12</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
