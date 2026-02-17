@@ -1,4 +1,4 @@
-# 免费VPN节点购买 - 2月10日19.2M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点节点推荐，VPN节点购买推荐  更新时间 2026-02-10 09:56:03
+# 免费VPN节点购买 - 2月17日20.9M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点节点推荐，VPN节点购买推荐  更新时间 2026-02-17 09:59:31
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://cnfreevpn.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://cnfreevpn.github.io/uploads/2026/02/0-20260210.yaml
-- https://cnfreevpn.github.io/uploads/2026/02/1-20260210.yaml
-- https://cnfreevpn.github.io/uploads/2026/02/2-20260210.yaml
-- https://cnfreevpn.github.io/uploads/2026/02/3-20260210.yaml
-- https://cnfreevpn.github.io/uploads/2026/02/4-20260210.yaml
+- https://cnfreevpn.github.io/uploads/2026/02/0-20260217.yaml
+- https://cnfreevpn.github.io/uploads/2026/02/1-20260217.yaml
+- https://cnfreevpn.github.io/uploads/2026/02/2-20260217.yaml
+- https://cnfreevpn.github.io/uploads/2026/02/3-20260217.yaml
+- https://cnfreevpn.github.io/uploads/2026/02/4-20260217.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://cnfreevpn.github.io/uploads/2026/02/0-20260210.txt
-- https://cnfreevpn.github.io/uploads/2026/02/1-20260210.txt
-- https://cnfreevpn.github.io/uploads/2026/02/2-20260210.txt
-- https://cnfreevpn.github.io/uploads/2026/02/3-20260210.txt
-- https://cnfreevpn.github.io/uploads/2026/02/4-20260210.txt
+- https://cnfreevpn.github.io/uploads/2026/02/0-20260217.txt
+- https://cnfreevpn.github.io/uploads/2026/02/1-20260217.txt
+- https://cnfreevpn.github.io/uploads/2026/02/2-20260217.txt
+- https://cnfreevpn.github.io/uploads/2026/02/3-20260217.txt
+- https://cnfreevpn.github.io/uploads/2026/02/4-20260217.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://cnfreevpn.github.io/uploads/2026/02/20260210.json
+- https://cnfreevpn.github.io/uploads/2026/02/20260217.json
 
 ## 更多Clash节点订阅 ：
 
