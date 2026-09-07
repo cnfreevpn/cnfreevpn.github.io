@@ -308,9 +308,19 @@ never_direct allow all
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 如何按端口分流不同类型流量？</h5></div>
+    <div class="panel-body">
+        Sing-box 支持根据端口匹配流量，将不同应用流量分配到指定节点。结合策略组可实现精准分流，提高访问速度和网络稳定性，优化整体网络体验和管理效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 使用 AEAD 加密的优势是什么？</h5></div>
     <div class="panel-body">
         AEAD 加密提供更强的安全性和抗重放攻击能力，同时隐藏流量特征，降低被 DPI 检测风险。在高封锁环境下使用，可提升连接稳定性和长期可用性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>PassWall2 如何结合策略组实现自动节点切换？</h5></div>
+    <div class="panel-body">
+        PassWall2 会定期测试节点延迟和丢包率，结合策略组自动切换到最优节点。无需手动干预即可保证网页、视频和游戏流量高速稳定访问，优化整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 如何导入订阅？</h5></div>
@@ -318,14 +328,9 @@ never_direct allow all
         在 WinXray 界面中点击“导入订阅”选项，将机场提供的订阅链接粘贴进去。点击更新后，WinXray 会自动下载节点配置并生成列表，用户可手动选择或自动切换延迟最低的节点使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何按端口分流不同类型流量？</h5></div>
+    <div class="panel-heading"><h5>Vmess 的安全加密方式推荐使用哪种？</h5></div>
     <div class="panel-body">
-        Sing-box 支持根据端口匹配流量，将不同应用流量分配到指定节点。结合策略组可实现精准分流，提高访问速度和网络稳定性，优化整体网络体验和管理效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 全局与规则代理如何合理选择？</h5></div>
-    <div class="panel-body">
-        全局代理适合游戏或全局科学上网，将所有流量通过节点；规则代理仅对指定应用或 IP 走代理，可提高带宽利用率和访问效率，根据使用场景灵活选择模式。<hr />    </div>
+        目前推荐使用 auto 或 none（结合 TLS 加密）以提升性能。旧版 AEAD 加密已被废弃，使用 TLS/XTLS 层提供的加密即可确保安全。过度加密反而增加 CPU 占用与延迟。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Mihomo 节点分组如何保证低延迟访问？</h5></div>
@@ -333,24 +338,19 @@ never_direct allow all
         将节点按延迟、地区或用途分组，并启用策略组，系统会根据节点健康和延迟自动选择最佳节点。保证网页浏览、视频播放和游戏流量的低延迟稳定连接。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 全局与规则代理如何合理选择？</h5></div>
+    <div class="panel-body">
+        全局代理适合游戏或全局科学上网，将所有流量通过节点；规则代理仅对指定应用或 IP 走代理，可提高带宽利用率和访问效率，根据使用场景灵活选择模式。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Potatso Lite 支持手动和二维码导入节点吗？</h5></div>
     <div class="panel-body">
         支持。用户可以手动添加节点信息，或者通过扫描节点二维码导入节点。虽然不支持自动订阅更新，但足够满足轻量用户对节点管理和分流的需求。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Vmess 的安全加密方式推荐使用哪种？</h5></div>
-    <div class="panel-body">
-        目前推荐使用 auto 或 none（结合 TLS 加密）以提升性能。旧版 AEAD 加密已被废弃，使用 TLS/XTLS 层提供的加密即可确保安全。过度加密反而增加 CPU 占用与延迟。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>何为 fake-ip 模式，它的优缺点是什么？</h5></div>
     <div class="panel-body">
         fake-ip 是通过伪造 DNS 返回的 IP 地址让客户端透明代理流量，优点是兼容性好、无需修改应用代理设置；缺点是可能导致某些证书校验或 SNI 伪装失效，需要配合 DNS 与证书策略谨慎使用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 如何结合策略组实现自动节点切换？</h5></div>
-    <div class="panel-body">
-        PassWall2 会定期测试节点延迟和丢包率，结合策略组自动切换到最优节点。无需手动干预即可保证网页、视频和游戏流量高速稳定访问，优化整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 的节点延迟测量如何帮助选择节点？</h5></div>
@@ -403,16 +403,16 @@ never_direct allow all
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-8-5.htm" title="免费VPN节点购买 - 8月5日21.2M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 8月5日21.2M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-15-share-vpn.htm" title="免费VPN节点购买 - 7月15日22.6M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 7月15日22.6M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-10-vpn-node.htm" title="免费VPN节点购买 - 8月10日18.9M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 8月10日18.9M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-7-31.htm" title="免费VPN节点购买 - 7月31日22.2M/S|免费Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 7月31日22.2M/S|免费Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-28-vpn-proxy.htm" title="免费VPN节点购买 - 7月28日22.2M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 7月28日22.2M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-30-free-vpn-node.htm" title="免费VPN节点购买 - 8月30日21M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/SSR节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 8月30日21M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/SSR节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-26-vpn-proxy.htm" title="免费VPN节点购买 - 8月26日21.8M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 8月26日21.8M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-2-node-share.htm" title="免费VPN节点购买 - 9月2日19.6M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点/Trojan节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 9月2日19.6M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点/Trojan节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-12-node-share.htm" title="免费VPN节点购买 - 8月12日21.5M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 8月12日21.5M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-8-13.htm" title="免费VPN节点购买 - 8月13日20.2M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/Clash节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 8月13日20.2M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/Clash节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-8-25.htm" title="免费VPN节点购买 - 8月25日20.8M/S|免费Clash节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 8月25日20.8M/S|免费Clash节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-8-29.htm" title="免费VPN节点购买 - 8月29日20.3M/S|免费Trojan节点/SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 8月29日20.3M/S|免费Trojan节点/SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-8-8-free-vpn-node.htm" title="免费VPN节点购买 - 8月8日21.1M/S|免费SSR节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/Singbox节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 8月8日21.1M/S|免费SSR节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/Singbox节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-21-top-vpn.htm" title="免费VPN节点购买 - 7月21日20.9M/S|免费Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 7月21日20.9M/S|免费Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-6-vpn-node.htm" title="免费VPN节点购买 - 8月6日22.5M/S|免费Singbox节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点/V2ray节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 8月6日22.5M/S|免费Singbox节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点/V2ray节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-14-vpn-node.htm" title="免费VPN节点购买 - 7月14日22.5M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 7月14日22.5M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-25-free-node-subscribe-links.htm" title="免费VPN节点购买 - 7月25日21.9M/S|免费SSR节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 7月25日21.9M/S|免费SSR节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-7.htm" title="免费VPN节点购买 - 8月7日21M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点/Singbox节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 8月7日21M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点/Singbox节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-24-vpn-node.htm" title="免费VPN节点购买 - 8月24日22.8M/S|免费Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点/SSR节点节点推荐，VPN节点购买推荐">免费VPN节点购买 - 8月24日22.8M/S|免费Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点/SSR节点节点推荐，VPN节点购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -424,10 +424,10 @@ never_direct allow all
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">17</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                     </ul>
     </div>
